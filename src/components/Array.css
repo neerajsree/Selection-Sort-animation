@@ -3,45 +3,45 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-  }
-  
-  .selection-sort-title {
+}
+
+.selection-sort-title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .input-section {
+}
+
+.input-section {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-  }
-  
-  .array-input {
+}
+
+.array-input {
     padding: 10px;
     width: 300px;
     border: 1px solid #d1d5db;
     border-radius: 4px;
-  }
-  
-  .parse-button {
+}
+
+.parse-button {
     padding: 10px 20px;
     background-color: #3b82f6;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .array-display {
+}
+
+.array-display {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-  }
-  
-  .array-item {
+}
+
+.array-item {
     width: 40px;
     height: 40px;
     background-color: #3b82f6;
@@ -50,51 +50,75 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-  }
-  
-  .button-group {
+}
+
+.button-group {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-  }
-  
-  .sort-button, .reset-button {
+}
+
+.sort-button, .reset-button {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .sort-button {
+}
+
+.sort-button {
     background-color: #10b981;
     color: white;
-  }
-  
-  .reset-button {
+}
+
+.reset-button {
     background-color: #ef4444;
     color: white;
-  }
-  
-  .sorting-steps {
+}
+
+/* Sorting Steps */
+.sorting-steps {
     margin-top: 20px;
-  }
-  
-  .step-row {
+}
+
+.step-row {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 10px;
-  }
-  
-  .step-item {
+}
+
+/* Default number box */
+.step-item {
     width: 30px;
     height: 30px;
-    background-color: #13d56a;
+    background-color: #d51313;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-  }
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Selected number (current minIndex) */
+.step-item.selected {
+    background-color: #f59e0b; /* Amber */
+    color: black;
+    font-weight: bold;
+}
+
+/* Sorted number (finalized position) */
+.step-item.sorted {
+    background-color: #6366f1; /* Indigo */
+    color: white;
+    font-weight: bold;
+}
+
+/* Final step: Entire sorted array turns green */
+.step-item.final-sorted {
+    background-color: #22c55e; /* Green */
+    color: white;
+    font-weight: bold;
+}
