@@ -77,7 +77,7 @@
     color: white;
 }
 
-/* Sorting Steps */
+
 .sorting-steps {
     margin-top: 20px;
 }
@@ -89,7 +89,7 @@
     margin-bottom: 10px;
 }
 
-/* Default number box */
+
 .step-item {
     width: 30px;
     height: 30px;
@@ -102,23 +102,22 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Selected number (current minIndex) */
+
 .step-item.selected {
-    background-color: #f59e0b; /* Amber */
+    background-color: #f59e0b; 
     color: black;
     font-weight: bold;
 }
 
-/* Sorted number (finalized position) */
 .step-item.sorted {
-    background-color: #6366f1; /* Indigo */
+    background-color: #6366f1; 
     color: white;
     font-weight: bold;
 }
 
-/* Final step: Entire sorted array turns green */
+
 .step-item.final-sorted {
-    background-color: #22c55e; /* Green */
+    background-color: #22c55e; 
     color: white;
     font-weight: bold;
 }
